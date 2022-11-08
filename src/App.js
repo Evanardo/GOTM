@@ -36,7 +36,7 @@ export default class App extends Component {
         <Nav></Nav>
 
         <h1>Welcome</h1>
-        {/* <h3>My name is {this.state.name}: {this.state.age}</h3> */}
+        <h6>"I'll need your clothes, your boots, and your motorcycle..."</h6>
         {/* <button onClick={this.happyBirthday} >Add to Age +</button> */}
       </div>
     )
