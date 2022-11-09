@@ -1,6 +1,6 @@
 body{
   /* background-color: dark; */
-  background-image: url("./images/20536906.png");
+  background-image: url("./static/images/20536906.png");
   background-repeat: no-repeat;
   /* background-position: center; */
   background-size: cover;
@@ -14,9 +14,9 @@ body{
   width: 250px; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
-  top: 0; /* Stay at the top */
+  top: 0px; /* Stay at the top */
   right: 0;
-  /* background-color: ; Black */
+  /* background-color: black;  */
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -67,3 +67,23 @@ h1{
 h6{
   color: #818181;
 }
+
+.form-control{
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.checklist{
+  padding-top: 40px;
+}
+
+.form-inline{
+  display: flex;
+  justify-content: flex-start;
+  max-width: 75vh;
+  padding-bottom: 10px;
+}
+
+.table{
+  color: pink;
+}
+

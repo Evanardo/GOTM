@@ -1,6 +1,14 @@
 import bootstrap from 'bootstrap'
 import React, { Component } from 'react'
-import Nav from './Nav';
+import Nav from './components/Nav';
+import{ Routes, Route, BrowserRouter as Router } from 'react-router-dom'
+import Landing from './views/Landing';
+import Loginpg from './views/Loginpg';
+import Profile from './views/Profile';
+import News from './views/News';
+import About from './views/About';
+import Contact from './views/Contact';
+import SignUp from './views/SignUp';
 
 export default class App extends Component {
   constructor(){
@@ -31,14 +39,28 @@ export default class App extends Component {
     console.log('rendering is about to happen')
 
     return (
-      <div id='main'>
-        
-        <Nav></Nav>
+      <Router>
+        <div id='main'>
+          
+          <Nav/>
+          <Routes>
+            <Route path='/profile'element={<Profile/>}/>
+            <Route path='/contact' element={<Contact/>}/>
+            <Route path='/news' element={<News/>}/>
+            <Route path='/about' element={<About/>}/>
+            <Route path='/' element={<Landing/>}/>
+            <Route path='/login' element={<Loginpg/>}/>
+            <Route path='/signup' element={<SignUp/>}/>
 
-        <h1>Welcome</h1>
-        <h6>"I'll need your clothes, your boots, and your motorcycle..."</h6>
-        {/* <button onClick={this.happyBirthday} >Add to Age +</button> */}
-      </div>
+
+
+            
+          </Routes>
+
+          
+          
+        </div>
+      </Router>
     )
   }
 }
