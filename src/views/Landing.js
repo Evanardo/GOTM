@@ -44,27 +44,13 @@ export default class Landing extends Component {
   ))
   render() {
     return (
-      <div>
-        <h1>Welcome</h1>
-        <h6>"I'll need your clothes, your boots, and your motorcycle..."</h6>
-        <div className='container checklist'>
-          <h6>You are the TaskMaster...</h6>
-          <div id="taskMaster" class="form-inline">
-            <div class="form-group mx-sm-3 mb-2">
-              <input type="text" class="form-control" value={this.state.newToDo} onChange={this.updateValue} placeholder="Enter a task..." />
-            </div>
-            <button className="btn btn-info mb-2" onClick={this.newToDo}>Add Task</button>
-          </div>
-          <div className='container'>
-            <table className="table">
-              <thead>
-                {/* <tr>
-                  <th>Your Task</th>
-                </tr> */}
-                <tbody>{this.todoRows()}</tbody>
-              </thead>
-            </table>
-          </div>
+      <div className='landing-body'>
+        <h1>Welcome to Game of the Month Club</h1>
+        <div class="hero-container">
+          <div class="environment"></div>
+          <h6 class="hero glitch layers" data-text="cult"><span>"Let's start a cult..."</span></h6>
+        </div>
+        <div className='checklist'>
 
         </div>
       </div>
