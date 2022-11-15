@@ -8,6 +8,7 @@ body{
   /* background-size: cover; */
   /* background: linear-gradient(-75deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#8f805f); */
   /* background: linear-gradient(-75deg,#c6b280,#465356,#3a4548,#2b2421,#141211,#6c6047,#202634); */
+  /* background: linear-gradient(90deg,#202634,#3a4548,#141211); */
   background: linear-gradient(90deg,#141211,#3a4548,#202634);
     background-size: 400% 400%;
     animation: gradient 33.3s ease infinite;
@@ -50,6 +51,7 @@ body{
   left: 0;
   /* background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   background: linear-gradient(90deg,#8f805f,#465356,#3a4548,#141211);
+  /* background: linear-gradient(90deg,#141211,#3a4548,#465356,#8f805f); */
     background-size: 400% 400%;
     animation: gradient 33.3s ease infinite;
   /* background-color: rgba(245, 245, 245, 0.05); */

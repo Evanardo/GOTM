@@ -11,12 +11,13 @@ export default class About extends Component {
             Games have a short time in the spotlight.
             They reach their release date and for a few brief moments they are collectively played by the masses.
             What a glorious time this is. All fans of video games talking, texting, tweeting about the same game.
-            These moments are what we aim to proved.
+            These moments are what we aim to provide.
           </p>
           <p>We want to bring people together with Game of the Month Club.</p>
           <p>
-            We strive to create a culture where games are being placed in the spotlight one more time.
-            We believe that the rewards from participating with GOTM will not only be check off titles in the backlog, but in community.
+            We strive to create a platform where games are placed in the spotlight one more time.
+            We believe that the rewards from participating in GOTM will not only be checking off titles in your backlog, 
+            but also discovering new content and building a culture.
             We have great plans and we hope you all will pledge yourself to our little cult. 
           </p>
           
