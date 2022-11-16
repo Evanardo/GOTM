@@ -1,4 +1,11 @@
-
+/* .cursor{
+  width: 7px;
+  height: 7px;
+  border: 1px solid white;
+  border-radius: 50%;
+  background-color:  #ebebe0;
+  position:absolute;
+} */
 body{
   /* background-image: url("./static/images/20536906.png"); */
   /* background-repeat: no-repeat; */
@@ -9,12 +16,15 @@ body{
   /* background: linear-gradient(-75deg, #ee7752, #e73c7e, #23a6d5, #23d5ab,#8f805f); */
   /* background: linear-gradient(-75deg,#c6b280,#465356,#3a4548,#2b2421,#141211,#6c6047,#202634); */
   /* background: linear-gradient(90deg,#202634,#3a4548,#141211); */
-  background: linear-gradient(90deg,#141211,#3a4548,#202634);
+  /* background: linear-gradient(90deg,#141211,#3a4548,#202634); */
+  background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
     background-size: 400% 400%;
-    animation: gradient 33.3s ease infinite;
+    animation: gradient 133.2s ease infinite;
   height: 100vh;
   font-family: 'Arcade Rounded', sans-serif;
   padding-left: 315px;
+  margin: 0;
+  height: 100vh;
 }
 @keyframes gradient {
   0% {
@@ -40,6 +50,7 @@ body{
 
 /* The side navigation menu */
 .sidenav {
+  /* cursor: none; */
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
@@ -50,10 +61,10 @@ body{
   top: 0px; /* Stay at the top */
   left: 0;
   /* background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
-  background: linear-gradient(90deg,#8f805f,#465356,#3a4548,#141211);
   /* background: linear-gradient(90deg,#141211,#3a4548,#465356,#8f805f); */
+  background: linear-gradient(-90deg,#141211,#3a4548,#141211);
     background-size: 400% 400%;
-    animation: gradient 33.3s ease infinite;
+    animation: gradient 133.2s ease infinite;
   /* background-color: rgba(245, 245, 245, 0.05); */
   /* background-color: #475357;  */
   /* box-shadow: 5px 1px 1px 1px rgba(0, 0, 0, 0.2); */
@@ -75,17 +86,18 @@ body{
 
 /* When you mouse over the navigation links, change their color */
 .sidenav a:hover {
-  color: #222222;
+  color:#c6b280;
+  cursor:cell;
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+/* .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 36px;
   margin-left: 50px;
-}
+} */
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
@@ -126,10 +138,31 @@ h2{
   font-family: 'Alien League Expanded', sans-serif;
 }
 
+#contact{
+  display: flex;
+  flex-direction: column;
+  margin: 5vw;
+}
+
+h3{
+  color: #8f805f;
+  margin: 20px 0 0 20px;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 30em;
+  animation: type 4s steps(60, end); 
+}
+@keyframes type{ 
+  from { width: 0; } 
+} 
+
 .aboutUs{
   display: flex;
   justify-content: center;
-  padding: 15vh;
+  margin-top: 15vh;
+  margin-left: 15vh;
+  margin-right: 15vh;
+  margin-bottom: 5vh;
   align-content: center;
   color: #ebebe0;
   flex-wrap: wrap;
@@ -140,7 +173,7 @@ h2{
 
 #signingOff{
   display: flex;
-  padding-left: 15vh;
+  margin-left: 15vh;
   /* justify-content: center; */
   color: #8f805f;
   font-family: 'Alien League Expanded', sans-serif;
@@ -149,24 +182,29 @@ h2{
 
 .form-control{
   background-color: rgb(255, 255, 255, 0.3);
+  margin-bottom: 0.5vw;
 }
 
 .checklist{
-  padding-top: 40px;
+  /* padding-top: 15vh; */
+  background-color: pink;
 }
 
 .form-inline{
   display: flex;
   justify-content: center;
-  max-width: 75vh;
-  padding-bottom: 10px;
+  /* max-width: 75vh; */
+  /* padding-bottom: 10px; */
 }
+
+
 .reg-footer{
   position: relative;
   box-shadow: var(--theme-elements-boxShadow-card);
   width: 100%;
   padding: var(--compactSpacer) var(--lessCompactSpacer);
   height: 76px;
+  margin-top: 5vh;
   overflow: hidden;
   display: flex;
   align-items: center;
@@ -175,24 +213,47 @@ h2{
   flex-direction: column;
   flex-wrap: wrap;
   align-content:flex-end;
+  /* background-color: pink; */
   /* align-items: flex-end; */
+}
+
+#reg-login{
+  font-size: smaller;
+  /* background-color: #e0287d; */
+}
+
+#reg-signup{
+  font-size: smaller;
+  /* background-color: #1bc7fb; */
 }
 
 #register{
   font-size: small;
+  color:#8f805f;
 }
 
+#register:hover{
+  color: #c6b280;
+  cursor:cell;
+}
 
 .signUpForm{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  padding: 10px;
+  /* padding: 10px; */
+  margin-top: 5vw;
+  margin-left: 25vw;
+  margin-right: 25vw;
+  /* min-width: 25vw; */
+  /* background-color: pink; */
 }
 
 .registerButt{
   display: flex;
   justify-content: center;
+  margin-top: 2vh;
+  /* background-color: white; */
 }
 
 

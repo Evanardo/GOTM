@@ -47,11 +47,11 @@ export default class Landing extends Component {
       <div className='landing-body'>
         <h1>Welcome to Game of the Month Club</h1>
         <div class="hero-container">
-          <div class="environment"></div>
+          
           <h6 class="hero glitch layers" data-text="cult"><span>"Let's start a cult..."</span></h6>
         </div>
         <div className='checklist'>
-
+          {/* <p>here</p> */}
         </div>
       </div>
     )

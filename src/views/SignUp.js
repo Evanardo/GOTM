@@ -27,7 +27,7 @@ export default class SignUp extends Component {
     });//url,options
     const data = await res.json();
     console.log(data)
-    if (data.status === 'ok'){
+    if (data.status === 'ok') {
       this.props.addMessage(data.message, 'success')
     }
   }
@@ -35,19 +35,22 @@ export default class SignUp extends Component {
   render() {
     return (
       <div>
-        <h1>Sign Up</h1>
-        <div className="signUpForm">
-        <form onSubmit={(e)=>{ this.sendSignUpInfo(e) }}>
-          <input placeholder='Username' name='username' className='form-control' type='text'/>
-          <input placeholder='Email' name='email' className='form-control' type='text'/>
-          <input placeholder='Password' name='password' className='form-control' type='password'/>
-          <input placeholder='Confirm Password' name='confirm-password' className='form-control' type='password'/>
-          
-          <div className='registerButt'>
-          <button type='submit' id="register"className='btn btn-warning'>Register</button>
+        <section>
+          <h1>Sign Up</h1>
+          <div className="signUpForm">
+            <form onSubmit={(e) => { this.sendSignUpInfo(e) }}>
+              <input placeholder='Username' name='username' className='form-control' type='text' />
+              <input placeholder='Email' name='email' className='form-control' type='text' />
+              <input placeholder='Password' name='password' className='form-control' type='password' />
+              <input placeholder='Confirm Password' name='confirm-password' className='form-control' type='password' />
+
+              <div className='registerButt'>
+                <button type='submit' id="register" className='btn'>Register</button>
+              </div>
+
+            </form>
           </div>
-        </form>
-        </div>
+        </section>
       </div>
     )
   }

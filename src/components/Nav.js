@@ -26,8 +26,8 @@ export default class Nav extends Component {
         <a href="/contact">Contact Us</a>
         <a href="/about">About Us</a>
         <div className='reg-footer'>
-          <a id="register" href="/login">Login</a>
-          <a id="register" href="/signup">Sign Up</a>
+          <a id='reg-login' href="/login">Login</a>
+          <a id='reg-signup' href="/signup">Sign Up</a>
         </div>
       </div>
     //   <span onclick={openNav()}>open</span>

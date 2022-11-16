@@ -10,14 +10,15 @@ import News from './views/News';
 import About from './views/About';
 import Contact from './views/Contact';
 import SignUp from './views/SignUp';
+import Cursor from './components/Cursor';
 
 
 export default class App extends Component {
   render() {
     return (
-      <Router>
       
-
+      <Router>
+          <Cursor/>
           <Nav />
           <Routes>
             <Route path='/profile' element={<Profile />} />
@@ -28,6 +29,7 @@ export default class App extends Component {
             <Route path='/login' element={<Loginpg />} />
             <Route path='/signup' element={<SignUp />} />
           </Routes>
+          
 
        
       </Router>
