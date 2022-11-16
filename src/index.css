@@ -7,9 +7,9 @@
   position:absolute;
 } */
 body{
-  background-image: url("./static/images/20536906.png");
+  /* background-image: url("./static/images/20536906.png");
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: center; */
   /* background-image: url("./static/images/90s-Aesthetic-Wallpaper-Free-Download.jpg"); */
   /* background-color: #3a4548; */
   /* background-size: cover; */
@@ -17,9 +17,9 @@ body{
   /* background: linear-gradient(-75deg,#c6b280,#465356,#3a4548,#2b2421,#141211,#6c6047,#202634); */
   /* background: linear-gradient(90deg,#202634,#3a4548,#141211); */
   /* background: linear-gradient(90deg,#141211,#3a4548,#202634); */
-  /* background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
+  background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
     background-size: 400% 400%;
-    animation: gradient 133.2s ease infinite; */
+    animation: gradient 133.2s ease infinite;
   height: 100vh;
   font-family: 'Arcade Rounded', sans-serif;
   padding-left: 315px;
@@ -62,9 +62,9 @@ body{
   left: 0;
   /* background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   /* background: linear-gradient(90deg,#141211,#3a4548,#465356,#8f805f); */
-  /* background: linear-gradient(-90deg,#141211,#3a4548,#141211);
+  background: linear-gradient(-90deg,#141211,#3a4548,#141211);
     background-size: 400% 400%;
-    animation: gradient 133.2s ease infinite; */
+    animation: gradient 133.2s ease infinite;
   /* background-color: rgba(245, 245, 245, 0.05); */
   /* background-color: #475357;  */
   /* box-shadow: 5px 1px 1px 1px rgba(0, 0, 0, 0.2); */
@@ -220,8 +220,8 @@ h3{
 .btn{
   font-family: 'Alien League Expanded', sans-serif;
   font-size:x-large;
-  /* color:#8f805f; */
-  color: #ebebe0;
+  color:#8f805f;
+  /* color: #ebebe0; */
 }
 
 .btn:hover{

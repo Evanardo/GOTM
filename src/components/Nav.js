@@ -13,12 +13,13 @@ function NavBar () {
 // render() {
   return (
     <div id="mySidenav" className="sidenav">
-      {/* <h6 type="image" className='icon'>GOTM</h6> */}
+      <h6 type="image" className='icon'>GOTM</h6>
       <Link to="/">Home</Link>
-      {/* <Link to="/news">News</Link> */}
-      {/* <Link to="/profile">Profile</Link> */}
-      {/* <Link to="/contact">Contact Us</Link> */}
-      {/* <Link to="/about">About Us</Link> */}
+      <Link to="/games">Games</Link>
+      <Link to="/profile">Profile</Link>
+      <Link to="/contact">Contact Us</Link>
+      <Link to="/about">About Us</Link>
+      <Link to="/search">Search</Link>
       <div className='reg-footer'>
         {!isAuthenticated ? (
           
