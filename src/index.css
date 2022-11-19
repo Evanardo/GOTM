@@ -140,17 +140,24 @@ h2{
 
 #contact{
   display: flex;
+  font-family: 'Alien League Expanded', sans-serif;
+  justify-content:center;
+  /* align-items: center; */
+  /* align-content: center; */
   flex-direction: column;
-  margin: 5vw;
+  /* flex-wrap: wrap; */
+  margin: 2vw;
+  
+  /* background-color: #e0287d; */
 }
 
 h3{
   color: #8f805f;
   margin: 20px 0 0 20px;
-  white-space: nowrap;
+  white-space: wrap;
   overflow: hidden;
-  width: 30em;
-  animation: type 4s steps(60, end); 
+  width: 25em;
+  animation: type 4s steps(133, end); 
 }
 @keyframes type{ 
   from { width: 0; } 
@@ -183,11 +190,18 @@ h3{
 .form-control{
   background-color: rgb(255, 255, 255, 0.3);
   margin-bottom: 0.5vw;
+  margin-top: 1.5vw;
+  border: none;
+  justify-content: center;
 }
 
 .checklist{
+  display: flex;
+  justify-content: center;
+  font-family: 'Alien League Expanded', sans-serif;
+  margin-top: 2.5vh;
   /* padding-top: 15vh; */
-  background-color: pink;
+  /* background-color: pink; */
 }
 
 .form-inline{
@@ -218,6 +232,9 @@ h3{
 }
 
 .btn{
+  display: flex;
+  justify-content: center;
+  /* background-color: #e0287d; */
   font-family: 'Alien League Expanded', sans-serif;
   font-size:x-large;
   color:#8f805f;
@@ -227,6 +244,11 @@ h3{
 .btn:hover{
   color: #c6b280;
   cursor: cell;
+}
+
+.search-btn{
+  display: flex;
+  justify-content: center;
 }
 
 #reg-login{

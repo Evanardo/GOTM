@@ -22,7 +22,6 @@ export default function App() {
       {/* <Cursor/> */}
       <NavBar />
       <Routes>
-        <Route path='/search' element={<Search />}/>
         <Route path='/' element={<Landing />} />
         <Route path='/games' element={<Games />} />
         <Route path='/profile' element={<Profile />} />

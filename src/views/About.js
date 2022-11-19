@@ -24,9 +24,9 @@ export default class About extends Component {
         </div>
         <p id='signingOff'>Blessings to the Backlog,</p>
 
-        <div class="hero-container">
-          <div class="environment"></div>
-          <h2 class="hero glitch layers" data-text="GOTM"><span>THE GOTM TEAM</span></h2>
+        <div className="hero-container">
+          <div className="environment"></div>
+          <h2 className="hero glitch layers" data-text="GOTM"><span>THE GOTM TEAM</span></h2>
         </div>
       </section>
     )

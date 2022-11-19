@@ -1,4 +1,4 @@
-import { useAuth0 } from '@auth0/auth0-react';
+import { useAuth0, User } from '@auth0/auth0-react';
 import React from 'react';
 import { Link } from 'react-router-dom';
 import LoginButton from './LoginButton';
@@ -19,7 +19,6 @@ function NavBar () {
       <Link to="/profile">Profile</Link>
       <Link to="/contact">Contact Us</Link>
       <Link to="/about">About Us</Link>
-      <Link to="/search">Search</Link>
       <div className='reg-footer'>
         {!isAuthenticated ? (
           
@@ -27,8 +26,11 @@ function NavBar () {
 
         ) : (
           <>
+          
+          <div>
 
             <LogoutButton />
+            </div>
 
           </>
         )}
