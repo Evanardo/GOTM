@@ -18,7 +18,7 @@ export const Games = () => {
 
     setGameResults([])
     
-    fetch(`https://api.rawg.io/api/games/?key=12cea32be47149aab116aaf08793f3d3&search=${slug}`)
+    fetch(`https://api.rawg.io/api/games?key=12cea32be47149aab116aaf08793f3d3&search=${slug}`)
       .then(res => res.json())
       .then(({ results }) => {
         results === undefined ? alert("You're search didn't pull up anything. Please check your spelling.") : setGameResults(results)
@@ -36,7 +36,7 @@ export const Games = () => {
           <form className='search' onSubmit={onSubmit}>
             <input
               onChange={handleChange}
-              // value={searchTerm} 
+              value={searchTerm} 
               placeholder='Search Games'
               className='form-control'
               type='text' />
@@ -49,13 +49,11 @@ export const Games = () => {
               </button>
             </div>
           </form>
-          
         </div>
+        <div className='game-results'>
         <Results gameResults={gameResults} />
+        </div>
       </section>
-      {/* <div>
-        <Results gameResults={gameResults} />
-      </div> */}
     </div>
   )
 
