@@ -5,12 +5,12 @@ import LoginButton from './LoginButton';
 import LogoutButton from './LogOutButton';
 
 
-function NavBar () {
+function NavBar() {
 
   const { isAuthenticated } = useAuth0();
 
 
-// render() {
+  // render() {
   return (
     <div id="mySidenav" className="sidenav">
       <h6 type="image" className='icon'>GOTM</h6>
@@ -21,15 +21,15 @@ function NavBar () {
       <Link to="/about">About Us</Link>
       <div className='reg-footer'>
         {!isAuthenticated ? (
-          
+
           <LoginButton />
 
         ) : (
           <>
-          
-          <div>
 
-            <LogoutButton />
+            <div>
+
+              <LogoutButton />
             </div>
 
           </>

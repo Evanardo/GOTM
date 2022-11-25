@@ -1,8 +1,14 @@
-const GameDetail = (props) => {
-    const { game } = props.location.gameProps
+import React from "react";
 
+
+const GameDetail = (props) => {
+
+    const { game } = props.location.gamesProps
+
+    
     return (
-        <div>
+        
+        <div className="card">
             <h1>{game.name}</h1>
             <p>Released: {game.released}</p>
             <p>Rating: {game.rating}</p>
@@ -19,6 +25,7 @@ const GameDetail = (props) => {
                     game.short_screenshots.map(ss => 
                         <li>
                             <img src={ss.image}
+
                             alt = 'screenshot'>
 
                             </img>
@@ -28,5 +35,6 @@ const GameDetail = (props) => {
         </div>
     );
 }
+
 
 export default GameDetail;

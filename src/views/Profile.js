@@ -1,33 +1,47 @@
 import React, { Component } from 'react';
-// import Card from "react-bootstrap/Card";
 import { Link } from 'react-router-dom';
-import { ReactDOM } from 'react';
+import placeholder from '../static/images/placeholder.jpg'
+// import { Card } from '@mui/material';
+// import { ReactDOM } from 'react';
 
 export default class Profile extends Component {
   render() {
     return (
-      
-      <section>
-        <h1>Dossier</h1>
-        {/* <Card>
-        <div className="card" style={"width: 18rem;"}>
-          <img  className="card-img-top" />
-          <div className="card-body">
-            <h5 className="card-title">Card title</h5>
-            <p className="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+      <div className='profile'>
+        <section id='dossier'>
+          <h1>Dossier</h1>
+
+          <div className='card-o-profile'>
+
+            <div className="card" id='profiles'>
+              <div className='headshot'>
+                <img className="card-img-top" src={placeholder} />
+              </div>
+              <div className="card-body">
+                <h2 className="card-title">FirstName LastName</h2>
+                <h2 id='bio-h2'>__Bio__</h2>
+                <p className="card-text" typeof='text' id='bio-box'>This is all about you...</p>
+              </div>
+              
+              <div className="card-body">
+                <button className="btn">Twitter</button>
+                <button className="btn">Instagram</button>
+                <button className="btn">Twitch</button>
+              </div>
+            </div>
+            <div className="card" id='playing'>
+              <div className="card-body">
+                <h1 className="card-title">Currently Playing</h1>
+                <div id='currently-playing'>
+                  <img className="card-img-top" src={placeholder} />
+                </div>
+              </div>
+
+            </div>
+
           </div>
-          <ul className="list-group list-group-flush">
-            <li className="list-group-item">An item</li>
-            <li className="list-group-item">A second item</li>
-            <li className="list-group-item">A third item</li>
-          </ul>
-          <div className="card-body">
-            <Link className="card-link">Card link</Link>
-            <Link className="card-link">Another link</Link>
-          </div>
-        </div>
-        </Card> */}
-      </section>
+        </section>
+      </div>
     )
   };
 };

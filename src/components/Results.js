@@ -1,7 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+import GameDetail from './GameDetail';
 
 const Results = (props) => {
+  
 
   return (
     <div className="results-container">
@@ -11,8 +13,8 @@ const Results = (props) => {
             <li key={game.id}>
 
               <Link to={{
-                pathname: `/game/${game.name}`,
-                gameProps: {
+                pathname: `/games/${game.name}`,
+                gamesProps: {
                   game: game
                 }
               }}>
@@ -30,6 +32,6 @@ const Results = (props) => {
       </ul>
     </div>
   );
-}
+};
 
 export default Results;

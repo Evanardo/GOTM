@@ -129,6 +129,7 @@ h6{
   justify-content: center;
   color: #c6b280;
   font-family: 'Alien League Expanded', sans-serif;
+  font-size: x-large;
 }
 
 h2{
@@ -256,13 +257,86 @@ h3{
   justify-content: center;
   text-align: center;
   margin: 5vh;
+  border-radius: 25px;
 }
 
 .card{
   max-width: 50rem;
+  /* min-width: 45rem; */
   background-color: rgba(255,255,255,0.05);
   margin: .5vh;
+  border-radius: 20px;
 }
+
+.card-gotm{
+  max-width: 50rem;
+  /* min-width: 35rem; */
+  height: 40rem;
+  background-color: rgba(255,255,255,0.05);
+  margin: 5rem;
+  color: #8f805f;
+  text-decoration: none;
+  font-size: larger;
+  border-radius: 25px;
+}
+
+.curLast-month{
+  display: flex;
+  justify-content: center;
+  
+}
+
+.gotm-title{
+  display: flex;
+  justify-content: center;
+  /* background-color: #e0287d; */
+  font-family: 'Alien League Expanded', sans-serif;
+  font-size:xx-large;
+  color:#8f805f;
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+
+}
+
+.gotm-title:hover{
+  color: #c6b280;
+  cursor:cell;
+}
+
+.card-text{
+  display: flex;
+  justify-content: center;
+  color: #ebebe0;
+}
+
+.card-link{
+  text-decoration: none;
+}
+
+.card-body-footer{
+  display: flex;
+  justify-content: center;
+}
+
+.btn-movement{
+  display: flex;
+  justify-content: center;
+  background-color: rgb(255, 255, 255, 0);
+  border: none;
+  /* background-color: #e0287d; */
+  font-family: 'Alien League Expanded', sans-serif;
+  font-size:x-large;
+  color:#8f805f;
+  margin-top: 3vh;
+  /* color: #ebebe0; */
+}
+
+.btn-movement:hover{
+  
+  color: #c6b280;
+  cursor: cell;
+}
+
 
 .game-results{
   display: flex;
@@ -286,6 +360,10 @@ li{
 a{
   text-decoration: none;
 }
+
+/* Link :hover{
+  color: #c6b280;
+} */
 
 li a:hover{
   color: #c6b280;
@@ -331,6 +409,50 @@ li a:hover{
 }
 
 
+/* PROFILE PAGE */
+
+
+.headshot{
+  margin: 5rem;
+  align-self: center;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 100%;
+}
+
+.card-o-profile{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  
+  /* gap: 1rem; */
+  /* grid-template-areas: 
+    "profiles profiles"; */
+  /* background-color: #ccc; */
+}
+
+#profiles{
+  display:flex;
+  justify-content: flex-start;
+  max-width: 40%;
+  min-width: 35rem;
+  height: 50rem;
+  /* background-color: #e0287d; */
+}
+
+#currently-playing{
+  display: flex;
+  max-height: 35rem;
+  /* background-color: aqua; */
+}
+#playing{
+  display:flex;
+  position: relative;
+  /* max-width: 45%; */
+  min-width: 40rem;
+  max-height: 35rem;
+  /* background-color: chartreuse; */
+}
 
 
 

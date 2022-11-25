@@ -1,7 +1,7 @@
 import React from 'react';
 import { useState } from 'react';
 import Results from '../components/Results';
-// import { useDispatch } from 'react-redux';
+import { searchGames } from '../chronic/apiCalls';
 
 
 export const Games = () => {
@@ -15,10 +15,11 @@ export const Games = () => {
   const onSubmit = e => {
     e.preventDefault();
     let slug = searchTerm.split(' ').join('-').toLowerCase()
+    const apiKey = process.env.REACT_APP_API_KEY
 
     setGameResults([])
     
-    fetch(`https://api.rawg.io/api/games?key=12cea32be47149aab116aaf08793f3d3&search=${slug}`)
+    fetch(`https://api.rawg.io/api/games?key=${apiKey}&search=${slug}`)
       .then(res => res.json())
       .then(({ results }) => {
         results === undefined ? alert("You're search didn't pull up anything. Please check your spelling.") : setGameResults(results)
