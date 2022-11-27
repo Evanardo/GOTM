@@ -1,14 +1,11 @@
-import React from "react";
-
-
 const GameDetail = (props) => {
 
-    const { game } = props.location.gamesProps
+    const game  = props.location.gameProps
 
     
     return (
         
-        <div className="card">
+        <div>
             <h1>{game.name}</h1>
             <p>Released: {game.released}</p>
             <p>Rating: {game.rating}</p>
