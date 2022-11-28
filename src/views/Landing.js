@@ -21,6 +21,11 @@ export default class Landing extends Component {
                 <div className="card-body">
                   <h6 className="card-text">Current Game of the Month</h6>
                   <div className='curLast-month'>
+
+                  {/* <Link to={`/games/${game.name}`}
+                state= {{
+                  game: game
+                }}/> */}
                   <h2 className="gotm-title">Eastward</h2>
                   </div>
                 </div>

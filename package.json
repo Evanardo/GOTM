@@ -21,6 +21,7 @@
     "react-loading-skeleton": "^3.1.0",
     "react-query": "^3.39.2",
     "react-redux": "^8.0.5",
+    "react-responsive-carousel": "^3.2.23",
     "react-router-dom": "^6.4.3",
     "react-scripts": "5.0.1",
     "react-use": "^17.4.0",

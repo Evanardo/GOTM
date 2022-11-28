@@ -43,7 +43,6 @@ body{
   justify-content: center;
   font-size:xx-large;
   color: #c6b280;
-  /* color:#ebebe0; */
   font-family: 'Alien League Expanded', sans-serif;
 
 }
@@ -54,23 +53,21 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100%; /* 100% Full-height */
-  width: 300px; /* 0 width - change this with JavaScript */
-  position: fixed; /* Stay in place */
-  z-index: 1; /* Stay on top */
-  top: 0px; /* Stay at the top */
+  height: 100%; 
+  width: 300px; 
+  position:fixed;
+  z-index: 1;
+  top: 0px; 
   left: 0;
   /* background: linear-gradient(45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab); */
   /* background: linear-gradient(90deg,#141211,#3a4548,#465356,#8f805f); */
   background: linear-gradient(-90deg,#141211,#3a4548,#141211);
     background-size: 400% 400%;
     animation: gradient 99.9s ease infinite;
-  /* background-color: rgba(245, 245, 245, 0.05); */
-  /* background-color: #475357;  */
   /* box-shadow: 5px 1px 1px 1px rgba(0, 0, 0, 0.2); */
-  overflow-x: hidden; /* Disable horizontal scroll */
-  padding-top: 60px; /* Place content 60px from the top */
-  transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  overflow-x: hidden; 
+  padding-top: 60px;
+  transition: 0.5s;
 }
 
 /* The navigation menu links */
@@ -119,7 +116,7 @@ body{
 h1{
   color: #ebebe0;
   font-family: 'Alien League Expanded', sans-serif;
-  font-size:2rem;
+  font-size:3rem;
   justify-content: center;
   display: flex;
 }
@@ -143,13 +140,8 @@ h2{
   display: flex;
   font-family: 'Alien League Expanded', sans-serif;
   justify-content:center;
-  /* align-items: center; */
-  /* align-content: center; */
   flex-direction: column;
-  /* flex-wrap: wrap; */
   margin: 2vw;
-  
-  /* background-color: #e0287d; */
 }
 
 h3{
@@ -182,7 +174,6 @@ h3{
 #signingOff{
   display: flex;
   margin-left: 15vh;
-  /* justify-content: center; */
   color: #8f805f;
   font-family: 'Alien League Expanded', sans-serif;
   font-size: larger;
@@ -201,15 +192,11 @@ h3{
   justify-content: center;
   font-family: 'Alien League Expanded', sans-serif;
   margin-top: 2.5vh;
-  /* padding-top: 15vh; */
-  /* background-color: pink; */
 }
 
 .form-inline{
   display: flex;
   justify-content: center;
-  /* max-width: 75vh; */
-  /* padding-bottom: 10px; */
 }
 
 
@@ -228,18 +215,14 @@ h3{
   flex-direction: column;
   flex-wrap: wrap;
   align-content:flex-end;
-  /* background-color: pink; */
-  /* align-items: flex-end; */
 }
 
 .btn{
   display: flex;
   justify-content: center;
-  /* background-color: #e0287d; */
   font-family: 'Alien League Expanded', sans-serif;
   font-size:x-large;
   color:#8f805f;
-  /* color: #ebebe0; */
 }
 
 .btn:hover{
@@ -262,7 +245,6 @@ h3{
 
 .card{
   max-width: 50rem;
-  /* min-width: 45rem; */
   background-color: rgba(255,255,255,0.05);
   margin: .5vh;
   border-radius: 20px;
@@ -270,7 +252,6 @@ h3{
 
 .card-gotm{
   max-width: 50rem;
-  /* min-width: 35rem; */
   height: 40rem;
   background-color: rgba(255,255,255,0.05);
   margin: 5rem;
@@ -289,7 +270,6 @@ h3{
 .gotm-title{
   display: flex;
   justify-content: center;
-  /* background-color: #e0287d; */
   font-family: 'Alien League Expanded', sans-serif;
   font-size:xx-large;
   color:#8f805f;
@@ -323,16 +303,13 @@ h3{
   justify-content: center;
   background-color: rgb(255, 255, 255, 0);
   border: none;
-  /* background-color: #e0287d; */
   font-family: 'Alien League Expanded', sans-serif;
   font-size:x-large;
   color:#8f805f;
   margin-top: 3vh;
-  /* color: #ebebe0; */
 }
 
 .btn-movement:hover{
-  
   color: #c6b280;
   cursor: cell;
 }
@@ -342,7 +319,6 @@ h3{
   display: flex;
   justify-content: center;
   text-align: center;
-  /* background-color: #e0287d; */
 }
 
 ul{
@@ -361,22 +337,16 @@ a{
   text-decoration: none;
 }
 
-/* Link :hover{
-  color: #c6b280;
-} */
-
 li a:hover{
   color: #c6b280;
 }
 
 #reg-login{
   font-size: smaller;
-  /* background-color: #e0287d; */
 }
 
 #reg-signup{
   font-size: smaller;
-  /* background-color: #1bc7fb; */
 }
 
 #register{
@@ -393,21 +363,27 @@ li a:hover{
   display: flex;
   justify-content: center;
   flex-direction: column;
-  /* padding: 10px; */
   margin-top: 5vw;
   margin-left: 25vw;
   margin-right: 25vw;
-  /* min-width: 25vw; */
-  /* background-color: pink; */
 }
 
 .registerButt{
   display: flex;
   justify-content: center;
   margin-top: 2vh;
-  /* background-color: white; */
 }
 
+.card-gotm-2{
+  max-width: 50rem;
+  /* min-width: 35rem; */
+  height: 20rem;
+  margin: 0.5rem;
+  color: #8f805f;
+  text-decoration: none;
+  font-size: larger;
+  border-radius: 25px;
+}
 
 /* PROFILE PAGE */
 
@@ -424,11 +400,6 @@ li a:hover{
   display: flex;
   justify-content:center;
   flex-direction: row;
-  
-  /* gap: 1rem; */
-  /* grid-template-areas: 
-    "profiles profiles"; */
-  /* background-color: #ccc; */
 }
 
 #profiles{
@@ -437,21 +408,18 @@ li a:hover{
   max-width: 40%;
   min-width: 35rem;
   height: 50rem;
-  /* background-color: #e0287d; */
 }
 
 #currently-playing{
   display: flex;
   max-height: 35rem;
-  /* background-color: aqua; */
 }
+
 #playing{
   display:flex;
   position: relative;
-  /* max-width: 45%; */
   min-width: 40rem;
   max-height: 35rem;
-  /* background-color: chartreuse; */
 }
 
 
@@ -477,16 +445,10 @@ section {
   display: inline-block;
   /* color: #fff; */
   z-index: 2;
-  /* letter-spacing: 10px; */
 
   /* Bright things in dark environments usually cast that light, giving off a glow */
   filter: drop-shadow(0 1px 3px);
 }
-
-/* .demo {
-  height: 100px;
-  background: #fff;
-} */
 
 .layers {
   position: relative;
