@@ -60,3 +60,57 @@ export const Games = () => {
 
 
 export default Games;
+// import { useState } from "react";
+// import { fetchSearch } from "../components/Search";
+// import { useDispatch } from "react-redux";
+
+// const Search = () => {
+//   const dispatch = useDispatch();
+//   const [inputText, setInputText] = useState('');
+
+//   const inputHandler = (e) => {
+//     setInputText(e.target.value);
+//   };
+
+//   const submitSearch = (e) => {
+//     e.preventDefault();
+//     dispatch(fetchSearch(inputText));
+//     setInputText('');
+//   };
+
+//   const wipeSearch = () => {
+//     dispatch({ type: 'WIPE_SEARCHED'});
+//   };
+
+//   return(
+//     <div>
+//       <section>
+//         <h1>Games</h1>
+//         <div className='checklist'>
+//           <form className='search' onClick={wipeSearch}>
+//             <input
+//               onChange={inputHandler}
+//               value={inputText}
+//               placeholder='Search Games'
+//               className='form-control'
+//               type='text' />
+//             <div className='search-btn'>
+//               <button
+//                 className='btn'
+//                 onClick={submitSearch} 
+//                 type='submit'>
+//                 Search
+//               </button>
+//             </div>
+//           </form>
+//         </div>
+//         <div className='game-results'>
+//           {/* <Results gameResults={gameResults} /> */}
+//         </div>
+//       </section>
+//     </div>
+//   );
+// };
+
+// export default Search;
+

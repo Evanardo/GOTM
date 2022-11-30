@@ -19,7 +19,7 @@ body{
   /* background: linear-gradient(90deg,#141211,#3a4548,#202634); */
   background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
     background-size: 400% 400%;
-    animation: gradient 99.9s ease infinite;
+    animation: gradient 75s ease infinite;
   height: 100vh;
   font-family: 'Arcade Rounded', sans-serif;
   padding-left: 315px;
@@ -63,7 +63,7 @@ body{
   /* background: linear-gradient(90deg,#141211,#3a4548,#465356,#8f805f); */
   background: linear-gradient(-90deg,#141211,#3a4548,#141211);
     background-size: 400% 400%;
-    animation: gradient 99.9s ease infinite;
+    animation: gradient 75s ease infinite;
   /* box-shadow: 5px 1px 1px 1px rgba(0, 0, 0, 0.2); */
   overflow-x: hidden; 
   padding-top: 60px;
@@ -78,7 +78,8 @@ body{
   color: #ebebe0;
   display: block;
   transition: 0.3s;
-  font-family: 'Courier New', Courier, monospace;
+  font-family: 'Alien League Expanded', sans-serif;
+  font-size: 22px;
 }
 
 /* When you mouse over the navigation links, change their color */

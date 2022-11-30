@@ -1,11 +1,11 @@
-import React, { Component } from 'react';
-import placeholder from '../static/images/placeholder.jpg';
+import React from 'react';
 import Eastward from '../static/images/Eastward.avif';
 import AoR from '../static/images/art_of_rally.avif';
 import { Link } from 'react-router-dom';
+import GameDetail from '../components/GameDetail';
 
-export default class Landing extends Component {
-  render() {
+export default function Landing() {
+  
     return (
       <div className='landing-body'>
         <section>
@@ -21,19 +21,21 @@ export default class Landing extends Component {
                 <div className="card-body">
                   <h6 className="card-text">Current Game of the Month</h6>
                   <div className='curLast-month'>
-
+                  <h2 className="gotm-title" value='Eastward' onClick={GameDetail}>Eastward</h2>
                   {/* <Link to={`/games/${game.name}`}
                 state= {{
                   game: game
                 }}/> */}
-                  <h2 className="gotm-title">Eastward</h2>
+                  
                   </div>
                 </div>
                 <img className="card-img-top" alt='' src={Eastward}/>
                 <div className="card-body-footer">
-                  <button className="btn-movement">Join the movement</button>
-                  {/* <button className="btn">Passing</button> */}
-                  {/* <button className="btn">Add to Collection</button> */}
+                  <h2 className="btn-movement">Join the movement</h2>
+                  {/* <h2 className='hero glitch layers' data-text="join">Join</h2>
+                  <h2 className='hero glitch layers' data-text="add">Us</h2> */}
+                  {/* <h2 className="btn">Passing</h2> */}
+                  {/* <h2 className="btn-movement">Add to Collection</h2> */}
                 </div>
               </div>
 
@@ -54,7 +56,7 @@ export default class Landing extends Component {
               </div>
         </section>
       </div>
-    )
-  }
-}
+    );
+  };
+
 

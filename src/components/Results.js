@@ -1,5 +1,6 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
+// import { useDispatch } from 'react-redux';
 
 
 
@@ -34,3 +35,36 @@ const Results = (props) => {
 };
 
 export default Results;
+
+
+
+// import { useDispatch } from "react-redux";
+// import { Link } from "react-router-dom";
+// import { loadDeets } from "./Search";
+
+
+// export const Game = ({ name, released, image, id }) => {
+//   const dispatch = useDispatch();
+
+//   const deetsHandler = () => {
+//     dispatch(loadDeets(id));
+//   };
+
+//   const stringId = id.toString();
+
+//   return(
+//     <div className="results-container" layoutId={stringId} onClick={deetsHandler}>
+//         <Link to={`/games/${id}`}>
+
+//           <div className='card'>
+//             <h6 layoutId={`title ${stringId}`}>{name}</h6>
+//             <p>{released}</p>
+//             <div className='card'>
+//               <img layoutId={`image ${stringId}`} src={image} alt={name} />
+//             </div>
+//           </div>
+//         </Link>
+//     </div>
+//   );
+// };
+
