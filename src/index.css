@@ -389,19 +389,13 @@ li a:hover{
 /* PROFILE PAGE */
 
 
-.headshot{
-  margin: 5rem;
-  align-self: center;
-  max-height: 400px;
-  max-width: 400px;
-  border-radius: 100%;
-}
-
 .card-o-profile{
   display: flex;
   justify-content:center;
   flex-direction: row;
+  flex-wrap: wrap;
 }
+
 
 #profiles{
   display:flex;
@@ -409,6 +403,14 @@ li a:hover{
   max-width: 40%;
   min-width: 35rem;
   height: 50rem;
+}
+
+.headshot{
+  margin: 5rem;
+  align-self: center;
+  max-height: 400px;
+  max-width: 400px;
+  border-radius: 100%;
 }
 
 #currently-playing{
@@ -423,6 +425,10 @@ li a:hover{
   max-height: 35rem;
 }
 
+#profile-links{
+  display: flex;
+  flex-direction: row;
+}
 
 
 

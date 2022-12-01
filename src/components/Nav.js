@@ -15,7 +15,7 @@ function NavBar() {
     <div id="mySidenav" className="sidenav">
       <h6 type="image" className='icon'>GOTM</h6>
       <Link to="/">Home</Link>
-      <Link to="/games">Games</Link>
+      <Link to="/games">Search</Link>
       <Link to="/profile">Profile</Link>
       <Link to="/contact">Contact Us</Link>
       <Link to="/about">About Us</Link>
@@ -27,10 +27,10 @@ function NavBar() {
         ) : (
           <>
 
-            <div>
+            
 
               <LogoutButton />
-            </div>
+            
 
           </>
         )}
