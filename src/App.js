@@ -7,6 +7,7 @@ import Games from './views/Games';
 import About from './views/About';
 import Contact from './views/Contact';
 import GameDetail from './components/GameDetail';
+import Collection from './views/Collection';
 
 
 
@@ -24,7 +25,8 @@ export default function App() {
         <Route path='/profile' element={<Profile />} />
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />        
-        <Route path='/games/:id' element={<GameDetail />} />        
+        <Route path='/games/:id' element={<GameDetail />} />
+        <Route path='/collection' element={<Collection/>} />        
         
       </Routes>
 

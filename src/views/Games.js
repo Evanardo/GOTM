@@ -42,7 +42,6 @@ export const Games = () => {
             <div className='search-btn'>
               <button
                 className='btn'
-                // onClick={submitSearch} 
                 type='submit'>
                 Search
               </button>
@@ -60,6 +59,17 @@ export const Games = () => {
 
 
 export default Games;
+
+
+
+
+
+
+
+
+
+
+
 // import { useState } from "react";
 // import { fetchSearch } from "../components/Search";
 // import { useDispatch } from "react-redux";

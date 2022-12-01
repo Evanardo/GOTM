@@ -375,6 +375,17 @@ li a:hover{
   margin-top: 2vh;
 }
 
+
+
+/* GameDetail PAGE */
+
+.card-o-profile-2{
+  display: flex;
+  justify-content:center;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
 .card-gotm-2{
   max-width: 50rem;
   /* min-width: 35rem; */
@@ -385,6 +396,14 @@ li a:hover{
   font-size: larger;
   border-radius: 25px;
 }
+
+#results-container-2{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+}
+
+
 
 /* PROFILE PAGE */
 
@@ -403,6 +422,14 @@ li a:hover{
   max-width: 40%;
   min-width: 35rem;
   height: 50rem;
+}
+
+#bio-h2{
+  display: flex;
+  justify-content:flex-start;
+  font-size: x-large;
+  margin-top: 5vh;
+  margin-bottom: 5vh;
 }
 
 .headshot{

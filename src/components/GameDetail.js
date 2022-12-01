@@ -6,46 +6,60 @@ const GameDetail = (props) => {
     console.log(game)
 
     return (
-        <div className="checklist">
-            <div className="card-gotm">
-                <div className="card-body">
-                    <h1>{game.name}</h1>
-                    <p>Released: {game.released}</p>
-                    <p>Rating: {game.rating}/5</p>
-                    
-                    <h5>Genre:</h5>
-                    {
-                        game.genres.map(g => `${g.name} | `)
-                    }
-                    
-                    
-                    <h5>Platform(s):</h5>
-                    {
-                        game.platforms.map(p => `${p.platform.name} | `)
-                    }
-                    {/* <h5>About:</h5>
+        <div className='profile'>
+            <section id='dossier'>
+                <h1>Details</h1>
+
+                <div className='card-o-profile-2'>
+                    <div className="checklist">
+                        <div className="card-gotm">
+                            <div className="card-body" >
+                                <h1>{game.name}</h1>
+                                <p>Released: {game.released}</p>
+                                <p>Rating: {game.rating}/5</p>
+
+                                <h5>Genre: </h5>
+                                <br />
+                                <div className="genres">
+                                    {
+                                        game.genres.map(g => `${g.name} | `)
+                                    }
+                                </div>
+                                <br />
+                                <br />
+
+                                <h5>Platform(s):</h5>
+                                <br />
+                                {
+                                    game.platforms.map(p => `${p.platform.name} | `)
+                                }
+                                <br /><br />
+                                {/* <h5>About:</h5>
                         {game.discription_raw} */}
-                    <div className="card-body-footer">
-                        <button className="btn-movement">Join the movement |</button>
-                        <button className="btn-movement">Add to Collection</button>
+                                <div className="card-body-footer">
+                                    <button className="btn-movement">Join the movement |</button>
+                                    <button className="btn-movement">Add to Collection</button>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div className="card" id="results-container-2">
+                            <ul>
+                                {
+                                    game.short_screenshots.map(ss =>
+                                        <li className="card-gotm-2">
+                                            <img src={ss.image}
+
+                                                alt='screenshots'>
+
+                                            </img>
+                                        </li>)
+                                }
+                            </ul>
+                        </div>
                     </div>
                 </div>
-            </div>
-
-            <div className="results-container">
-                <ul>
-                    {
-                        game.short_screenshots.map(ss =>
-                            <li className="card-gotm-2">
-                                <img src={ss.image}
-
-                                    alt='screenshots'>
-
-                                </img>
-                            </li>)
-                    }
-                </ul>
-            </div>
+            </section>
         </div>
     );
 }

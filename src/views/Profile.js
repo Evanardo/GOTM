@@ -1,9 +1,12 @@
-import React, { Component } from 'react';
+import { useAuth0 } from '@auth0/auth0-react';
+import React from 'react';
 import { Link } from 'react-router-dom';
-import placeholder from '../static/images/placeholder.jpg'
+import placeholder from '../static/images/placeholder.jpg';
+import AlanWake from '../static/images/AlanWake.jpeg';
 
 
 export default function Profile() {
+  const { user, isAuthenticated } = useAuth0();
   return (
     <div className='profile'>
       <section id='dossier'>
@@ -16,9 +19,18 @@ export default function Profile() {
               <img className="card-img-top" alt='profile-img' src={placeholder} />
             </div> */}
             <div className="card-body">
-              <h2 className="card-title">FirstName LastName</h2>
-              <h2 id='bio-h2'>__Bio__</h2>
-              <p className="card-text" typeof='text' id='bio-box'>This is all about you...</p>
+              <h1>Welcome</h1>
+              {isAuthenticated ? (
+                <h2 className="card-title">{user.email}</h2>
+              ) : (
+                <h2 className='card-title'>You are not one of us...</h2>
+              )}
+              
+              <h6 id='bio-h2'>Bio:</h6>
+              <div id='bio-box'>
+              <p className="card-text" typeof='text'>This could be all about you... but you've got commitment issues. Just log in already...</p>
+              <p className="card-text" typeof='text'></p>
+              </div>
             </div>
 
 
@@ -27,8 +39,9 @@ export default function Profile() {
             <div className="card" id='playing'>
               <div className="card-body">
                 <h1 className="card-title">Currently Playing</h1>
+                <h2 className='card-title'>Alan Wake</h2>
                 <div id='currently-playing'>
-                  <img className="card-img-top" alt='current' src={placeholder} />
+                  <img className="card-img-top" alt='current' src={AlanWake} />
                 </div>
               </div>
 
@@ -48,9 +61,9 @@ export default function Profile() {
 
               </div>
               <div className='card-body'>
-                <button className="btn">Collection</button>
-                <button className="btn">Wantlist</button>
-                <button className="btn">Backlog</button>
+                <Link className="btn">Collection</Link>
+                <Link className="btn">Wantlist</Link>
+                <Link className="btn">Backlog</Link>
               </div>
             </div>
           </div>
