@@ -19,7 +19,7 @@ export default function Profile() {
               <img className="card-img-top" alt='profile-img' src={placeholder} />
             </div> */}
             <div className="card-body">
-              <h1>Welcome</h1>
+              <h1>Hail</h1>
               {isAuthenticated ? (
                 <h2 className="card-title">{user.email}</h2>
               ) : (
@@ -30,6 +30,11 @@ export default function Profile() {
               <div id='bio-box'>
               <p className="card-text" typeof='text'>This could be all about you... but you've got commitment issues. Just log in already...</p>
               <p className="card-text" typeof='text'></p>
+              </div>
+              <div className='card-body-links'>
+                <Link to='/collection' className="btn">Your Collection</Link>
+                {/* <Link className="btn">Wantlist</Link>
+                <Link className="btn">Backlog</Link> */}
               </div>
             </div>
 
@@ -57,14 +62,10 @@ export default function Profile() {
               <div className='card-body'>
                 <a href="https://twitter.com/" target='_blank' rel="noreferrer" className="btn">Twitter</a>
                 <a href="https://www.instagram.com/" target='_blank' rel="noreferrer" className="btn">Instagram</a>
-                <a href="https://www.twitch.tv/" target='_blank' rel="noreferrer" className="btn">Twitch</a>
+                <h6 className='btn'><a href="https://www.twitch.tv/" target='_blank' rel="noreferrer" className="hero glitch layers" data-text="witch">Twitch</a></h6>
 
               </div>
-              <div className='card-body'>
-                <Link className="btn">Collection</Link>
-                <Link className="btn">Wantlist</Link>
-                <Link className="btn">Backlog</Link>
-              </div>
+              
             </div>
           </div>
         </div>

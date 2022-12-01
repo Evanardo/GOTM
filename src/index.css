@@ -137,12 +137,16 @@ h2{
   font-family: 'Alien League Expanded', sans-serif;
 }
 
+
+/* CONTACT PAGE */
+/* also includes: .CHECKLIST */
+
 #contact{
   display: flex;
   font-family: 'Alien League Expanded', sans-serif;
   justify-content:center;
   flex-direction: column;
-  margin: 2vw;
+  margin: 5vw;
 }
 
 h3{
@@ -150,8 +154,9 @@ h3{
   margin: 20px 0 0 20px;
   white-space: wrap;
   overflow: hidden;
-  width: 25em;
-  animation: type 4s steps(133, end); 
+  width: 35rem;
+  animation: type 4s steps(133, end);
+  font-size: xx-large;
 }
 @keyframes type{ 
   from { width: 0; } 
@@ -338,6 +343,7 @@ a{
   text-decoration: none;
 }
 
+
 li a:hover{
   color: #c6b280;
 }
@@ -375,17 +381,6 @@ li a:hover{
   margin-top: 2vh;
 }
 
-
-
-/* GameDetail PAGE */
-
-.card-o-profile-2{
-  display: flex;
-  justify-content:center;
-  flex-direction: row;
-  flex-wrap: wrap;
-}
-
 .card-gotm-2{
   max-width: 50rem;
   /* min-width: 35rem; */
@@ -397,7 +392,28 @@ li a:hover{
   border-radius: 25px;
 }
 
-#results-container-2{
+
+/* GameDetail PAGE */
+
+.card-gd-profile{
+  display: flex;
+  justify-content:space-around;
+  flex-direction: column;
+  flex-wrap: wrap;
+}
+
+.card-gd{
+  max-width: 50rem;
+  /* min-width: 35rem; */
+  height: 20rem;
+  margin: 0.5rem;
+  color: #8f805f;
+  text-decoration: none;
+  font-size: larger;
+  border-radius: 25px;
+}
+
+#results-container-gd{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
@@ -430,6 +446,11 @@ li a:hover{
   font-size: x-large;
   margin-top: 5vh;
   margin-bottom: 5vh;
+}
+
+.card-body-links{
+  display: flex;
+  justify-content: center;
 }
 
 .headshot{
@@ -466,7 +487,11 @@ li a:hover{
 
 
 a {
-  color: #ccc;
+  color:#8f805f;
+}
+
+a:hover{
+  color: #c6b280;
 }
 
 section {
@@ -820,7 +845,7 @@ section {
 .movement {
   /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
   position: relative;
-  animation: movement 8s step-end infinite;
+  animation: movement 10s step-end infinite;
 }
 
 @keyframes movement {

@@ -1,10 +1,11 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-// import { useDispatch } from 'react-redux';
+import { useAuth0 } from '@auth0/auth0-react';
 
 
 
 const Results = (props) => {
+  const { isAuthenticated } = useAuth0();
   
 
   return (
@@ -23,9 +24,18 @@ const Results = (props) => {
                   <div className='card'>
                     <img src={game.background_image} alt="game" />
                   </div>
+                  {isAuthenticated ? (
+                    <>
+                    <Link to='/collection'><h6 className="hero glitch layers" id='results-add2'>Add to collection</h6></Link>
+                    </>
+                  ) : (
+                    <></>
+                  )}
+                  
                 </div>
+                
               </Link>
-
+                
             </li>
           ))
         }

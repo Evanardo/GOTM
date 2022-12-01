@@ -26,7 +26,7 @@ export default function About() {
 
       <div className="hero-container">
         <div className="environment"></div>
-        <h2 className="hero glitch layers" data-text="GOTM"><span>THE GOTM TEAM</span></h2>
+        <h2 className="hero glitch layers" data-text="HELP"><span>THE GOTM TEAM</span></h2>
       </div>
     </section>
   );

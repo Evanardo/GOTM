@@ -2,7 +2,12 @@ import React from 'react'
 
 function Collection() {
   return (
-    <div>Collection</div>
+    <div>
+      <section>
+        <h1>Collection</h1>
+        
+      </section>
+    </div>
   )
 }
 

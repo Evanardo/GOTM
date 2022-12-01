@@ -1,6 +1,9 @@
 import { useLocation } from "react-router-dom";
+import { Link } from "react-router-dom";
+import { useAuth0 } from "@auth0/auth0-react";
 
 const GameDetail = (props) => {
+    const { isAuthenticated } = useAuth0();
     const location = useLocation()
     const { game } = location.state
     console.log(game)
@@ -10,9 +13,9 @@ const GameDetail = (props) => {
             <section id='dossier'>
                 <h1>Details</h1>
 
-                <div className='card-o-profile-2'>
+                <div className='card-gd-profile'>
                     <div className="checklist">
-                        <div className="card-gotm">
+                        <div className="card-gd">
                             <div className="card-body" >
                                 <h1>{game.name}</h1>
                                 <p>Released: {game.released}</p>
@@ -37,13 +40,20 @@ const GameDetail = (props) => {
                                 {/* <h5>About:</h5>
                         {game.discription_raw} */}
                                 <div className="card-body-footer">
-                                    <button className="btn-movement">Join the movement |</button>
-                                    <button className="btn-movement">Add to Collection</button>
+                                    <Link className="btn-movement">Join the movement&nbsp;</Link>
+                                    {isAuthenticated ? (
+                                        <>
+                                        <Link to='/collection' className="btn-movement">| Add to Collection</Link>
+                                        </>
+                                    ) : (
+                                        <></>
+                                    )}
+                                    
                                 </div>
                             </div>
                         </div>
 
-                        <div className="card" id="results-container-2">
+                        <div className="card" id="results-container-gd">
                             <ul>
                                 {
                                     game.short_screenshots.map(ss =>
