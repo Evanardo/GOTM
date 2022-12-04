@@ -8,6 +8,8 @@ import About from './views/About';
 import Contact from './views/Contact';
 import GameDetail from './components/GameDetail';
 import Collection from './views/Collection';
+import { Footer } from './views/Footer';
+import { CurtainsRounded } from '@mui/icons-material';
 
 
 
@@ -31,6 +33,7 @@ export default function App() {
       </Routes>
 
 
+      {/* <Footer/> */}
 
     </Router>
   )

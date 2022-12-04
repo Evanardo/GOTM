@@ -1,49 +1,130 @@
 import { useLocation } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import { Link } from "react-router-dom";
 import { useAuth0 } from "@auth0/auth0-react";
+import { FaCross } from "react-icons/fa";
+import { TbCross } from "react-icons/tb";
+import { 
+    SiNintendoswitch,
+    SiPlaystation,
+    SiPlaystation2,
+    SiPlaystation3,
+    SiPlaystation4,
+    SiPlaystation5,
+    SiPlaystationvita,
+    SiSteam,
+    SiXbox,
+    SiNintendo3Ds,
+    SiNintendogamecube,
+    SiSega,
+} from "react-icons/si";
+import { GiSunPriest } from "react-icons/gi";
+
 
 const GameDetail = (props) => {
     const { isAuthenticated } = useAuth0();
     const location = useLocation()
     const { game } = location.state
+    const navigate = useNavigate();
     console.log(game)
+
+    const starRating = () => {
+        const star = [];
+        const rating = Math.round(game.rating);
+
+        for (let i = 1; i <= 5; i++) {
+            if (i <= rating) {
+                star.push(<FaCross key={i} />);
+            } else {
+                star.push(<TbCross key={i} />);
+            }
+        }
+        return star;
+    };
+
+    const platformIcon = (platform) => {
+        switch (platform) {
+            case 'Nintendo 3DS':
+                return <SiNintendo3Ds/>;
+            case 'GameCube':
+                return <SiNintendogamecube/>;
+            case 'Nintendo Switch':
+                return <SiNintendoswitch/>;
+            case 'PC':
+                return <SiSteam />;
+            case 'PlayStation':
+                return <SiPlaystation />;
+            case 'PlayStation 2':
+                return <SiPlaystation2 />;
+            case 'PlayStation 3':
+                return <SiPlaystation3 />;
+            case 'PlayStation 4':
+                return <SiPlaystation4 />;
+            case 'PlayStation 5':
+                return <SiPlaystation5 />;
+            case 'PS Vita':
+                return <SiPlaystationvita />;
+            case 'Xbox 360':
+                return <p id="x360"><SiXbox/> 360</p>;
+                // return <p id="x360">Xbox 360</p>;
+            case 'Xbox Series S/X' && 'Xbox One':
+                return <SiXbox />; 
+        }
+    }
+
+    const handleClick = () => {
+        navigate(-1, {replace: true});
+    };
+
 
     return (
         <div className='profile'>
             <section id='dossier'>
                 <h1>Details</h1>
-
+                <div className="back2">
+                <button onClick={handleClick} className="btn">Back to Search</button>
+                </div>
+                
                 <div className='card-gd-profile'>
+                    
                     <div className="checklist">
                         <div className="card-gd">
                             <div className="card-body" >
                                 <h1>{game.name}</h1>
                                 <p>Released: {game.released}</p>
-                                <p>Rating: {game.rating}/5</p>
-
-                                <h5>Genre: </h5>
-                                <br />
-                                <div className="genres">
-                                    {
-                                        game.genres.map(g => `${g.name} | `)
-                                    }
-                                </div>
-                                <br />
-                                <br />
-
-                                <h5>Platform(s):</h5>
-                                <br />
+                                <p>Rating: {game.rating} / 5 &nbsp;&nbsp;
+                                    <ul>{starRating()}</ul></p>
+                                <p>Metacritic: {game.metacritic}</p>
+                                
+                                {/* <p>Playtime: {game.playtime}hrs</p> */}
+                                <p>Genres:&nbsp;&nbsp;
                                 {
-                                    game.platforms.map(p => `${p.platform.name} | `)
+                                game.genres.map(g => `[ ${g.name} ] `)
                                 }
-                                <br /><br />
+                                </p>
+                                <p>Platforms:
+                                <div id="platform-lo">
+                                {
+                                    game.platforms.map(p => (
+                                        
+                                            <h2 id="platformWicons">
+                                                &nbsp;{platformIcon(p.platform.name)}&nbsp;
+                                                {/* <p>{p.platform.name}</p> */}
+                                            </h2>
+                                        
+                                    ))
+                                }
+                                </div>
+                                </p>
                                 {/* <h5>About:</h5>
                         {game.discription_raw} */}
                                 <div className="card-body-footer">
-                                    <Link className="btn-movement">Join the movement&nbsp;</Link>
+                                    
                                     {isAuthenticated ? (
                                         <>
-                                        <Link to='/collection' className="btn-movement">| Add to Collection</Link>
+                                        {/* <Link className="btn-movement">Join the movement&nbsp;</Link> */}
+                                        <Link to='/collection' className="btn-movement">Add to Collection&nbsp;</Link>
+                                        <Link to='/profile' className="btn-movement">| Playing It</Link>
                                         </>
                                     ) : (
                                         <></>

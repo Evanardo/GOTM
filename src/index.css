@@ -1,10 +1,28 @@
-/* .cursor{
-  width: 7px;
-  height: 7px;
-  border: 1px solid white;
+/* *{
+  cursor: none;
+}
+
+.cursor{
+  pointer-events: none;
+  position: absolute;
+  top: 50%;
+  right: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 50%;
-  background-color:  #ebebe0;
-  position:absolute;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
+}
+.cursor-curse{
+  width: 10px;
+  height: 10px;
+  color: #ebebe0;
+  /* background-color: #8f805f; 
+}
+
+.cursor-curse-outline{
+  width: 12px;
+  height: 12px;
+  background-color:rgb(255, 255, 255, 0.3);
 } */
 body{
   /* background-image: url("./static/images/20536906.png");
@@ -20,11 +38,11 @@ body{
   background: linear-gradient(-90deg,#141211,#3a4548,#141211,#3a4548,#141211);
     background-size: 400% 400%;
     animation: gradient 75s ease infinite;
-  height: 100vh;
+  height: 100%;
   font-family: 'Arcade Rounded', sans-serif;
   padding-left: 315px;
   margin: 0;
-  height: 100vh;
+  
 }
 @keyframes gradient {
   0% {
@@ -38,16 +56,34 @@ body{
   }
 }
 
+
+/* FOOTER */
+
+/* #footer{
+  background-color: linear-gradient(rgb(0,0,0,0.8), rgb(0,0,0,0));
+} */
+
+
+/* Nav Icon */
+
 .icon{
   display: flex;
-  justify-content: center;
+  justify-content:center;
+  align-items: center;
   font-size:xx-large;
   color: #c6b280;
   font-family: 'Alien League Expanded', sans-serif;
 
 }
 
+#goTm-icon:hover{
+  color: #141211;
+}
+
 /* The side navigation menu */
+
+
+/* @media (min-width: ) */
 .sidenav {
   /* cursor: none; */
   display: flex;
@@ -76,7 +112,7 @@ body{
   text-decoration: none;
   font-size: 20px;
   color: #ebebe0;
-  display: block;
+  display: flex;
   transition: 0.3s;
   font-family: 'Alien League Expanded', sans-serif;
   font-size: 22px;
@@ -137,6 +173,10 @@ h2{
   font-family: 'Alien League Expanded', sans-serif;
 }
 
+
+img{
+  border-radius: 20px;
+}
 
 /* CONTACT PAGE */
 /* also includes: .CHECKLIST */
@@ -278,7 +318,7 @@ h3{
   justify-content: center;
   font-family: 'Alien League Expanded', sans-serif;
   font-size:xx-large;
-  color:#8f805f;
+  color:#c6b280;
   background-color: rgb(255, 255, 255, 0);
   border: none;
 
@@ -395,6 +435,15 @@ li a:hover{
 
 /* GameDetail PAGE */
 
+.back2{
+  display: flex;
+  justify-content: center;
+}
+
+/* #backButt{
+  color: #8f805f;
+} */
+
 .card-gd-profile{
   display: flex;
   justify-content:space-around;
@@ -419,6 +468,23 @@ li a:hover{
   flex-direction: column;
 }
 
+#platform-lo{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+
+#platformWicons{
+  display: flex;
+  flex-direction: row;
+  color:#8f805f;
+}
+
+#x360{
+  font-size:x-large;
+  padding-top: 10px;
+  color:#8f805f;
+}
 
 
 /* PROFILE PAGE */
@@ -446,6 +512,14 @@ li a:hover{
   font-size: x-large;
   margin-top: 5vh;
   margin-bottom: 5vh;
+  color:#ebebe0;
+}
+
+.card-bio{
+  display: flex;
+  justify-content: center;
+  color:#c6b280;
+  font-size: small;
 }
 
 .card-body-links{
@@ -476,6 +550,10 @@ li a:hover{
 #profile-links{
   display: flex;
   flex-direction: row;
+}
+
+#profile-links a{
+  align-items: center;
 }
 
 

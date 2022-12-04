@@ -20,23 +20,25 @@ export default function Landing(props) {
             <h6 className="hero glitch layers" data-text="CULT"><span>"Let's start a movement..."</span></h6>
           </div>
           <div className='checklist'>
-
-              <div className="card-gotm">
+{/* previous classnames=card-gotm & card-img-top */}
+              <div className="card">
                 <div className="card-body">
                   <h6 className="card-text">Current Game of the Month</h6>
                   <div className='curLast-month'>
                     
-                    <Link className="gotm-title">Eastward</Link>
+                    <h1 className="gotm-title">Eastward</h1>
                     {/* <Link className="gotm-title" to={`/games/${game.name}`} state= {{game: game}}>Eastward</Link> */}
                               
                   </div>
                 </div>
-                <img className="card-img-top" alt='' src={Eastward}/>
+                <img className="card" alt='' src={Eastward}/>
                 <div className="card-body-footer">
-                  <Link className="btn-movement">Join the movement&nbsp;</Link>
+                  
                   {isAuthenticated ? (
                     <>
+                      <Link className="btn-movement">Join the movement&nbsp;</Link>
                       <Link to='/collection' className="btn-movement">| Add to Collection</Link>
+                      {/* <Link to='/profile' className="btn-movement">| playing it</Link> */}
                     </>
                   ) : (
                     <></>
@@ -50,14 +52,14 @@ export default function Landing(props) {
 
           </div>
           <div className='checklist'>
-          <div className="card-gotm">
+          <div className="card">
                 <div className="card-body">
                   <h6 className="card-text">Previous Game of the Month</h6>
                   <div className='curLast-month'>
                   <h2 className="gotm-title">Art of Rally</h2>
                   </div>
                 </div>
-                <img className="card-img-top" alt='' src={AoR}/>
+                <img className="card" alt='' src={AoR}/>
                 <div className="card-body-footer">
                 {isAuthenticated ? (
                     <>
@@ -73,5 +75,3 @@ export default function Landing(props) {
       </div>
     );
   };
-
-

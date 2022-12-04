@@ -1,0 +1,45 @@
+---------GameDetail---------------
+
+import { 
+    SiNintendoswitch,
+    SiPlaystation,
+    SiPlaystation2,
+    SiPlaystation3,
+    SiPlaystation4,
+    SiPlaystation5,
+    SiPlaystationvita,
+    SiSteam,
+    SiXbox,
+    SiTwitch,
+    SlSocialTwitter,
+    SlSocialInstagram,
+} from "react-icons/si";
+import { GiSunPriest } from "react-icons/gi";
+
+
+-----------Profile---------------
+import { 
+  SiNintendoswitch,
+  SiPlaystation,
+  SiSteam,
+  SiXbox,
+  SiTwitch,
+  
+} from "react-icons/si";
+import {
+  SlSocialTwitter,
+  SlSocialInstagram,
+} from "react-icons/sl";
+
+---------to add as needed--------------
+SiNintendo,
+SiNintendo3Ds,
+SiNintendogamecube,
+SiSega,
+GiCowled,
+GiAnubis,
+GiBoatFishing,
+GiFishingHook,
+GiFishing,
+GiSwitchblade,
+GiCrucifix,
