@@ -1,29 +1,3 @@
-/* *{
-  cursor: none;
-}
-
-.cursor{
-  pointer-events: none;
-  position: absolute;
-  top: 50%;
-  right: 50%;
-  transform: translate(-50%, -50%);
-  border-radius: 50%;
-  opacity: 1;
-  transition: opacity 0.3s ease-in-out, transform 0.3s ease-in-out;
-}
-.cursor-curse{
-  width: 10px;
-  height: 10px;
-  color: #ebebe0;
-  /* background-color: #8f805f; 
-}
-
-.cursor-curse-outline{
-  width: 12px;
-  height: 12px;
-  background-color:rgb(255, 255, 255, 0.3);
-} */
 body{
   /* background-image: url("./static/images/20536906.png");
   background-repeat: no-repeat;
@@ -76,6 +50,10 @@ body{
 
 }
 
+/* #goTm-icon{
+  transform: rotate(180deg);
+} */
+
 #goTm-icon:hover{
   color: #141211;
 }
@@ -89,7 +67,8 @@ body{
   display: flex;
   flex-direction: column;
   flex-wrap: wrap;
-  height: 100%; 
+  flex:25%;
+  height: 100vh; 
   width: 300px; 
   position:fixed;
   z-index: 1;
@@ -134,16 +113,16 @@ body{
 } */
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
-#main {
+/* #main {
   transition: margin-left .5s;
   padding: 20px;
-}
+} */
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
-@media screen and (max-height: 450px) {
+/* @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
-}
+} */
 
 .landing-body{
   padding-top: 5vh;
@@ -178,8 +157,12 @@ img{
   border-radius: 20px;
 }
 
+
+
+
 /* CONTACT PAGE */
 /* also includes: .CHECKLIST */
+
 
 #contact{
   display: flex;
@@ -189,13 +172,25 @@ img{
   margin: 5vw;
 }
 
+.title-contact{
+  align-items: center; 
+
+}
+
+.crucifix{
+  transform: rotate(-40deg);
+  /* background-color: #141211; */
+  margin: -5px;
+  /* color:#c6b280; */
+}
+
 h3{
   color: #8f805f;
   margin: 20px 0 0 20px;
   white-space: wrap;
   overflow: hidden;
   width: 35rem;
-  animation: type 4s steps(133, end);
+  animation: type 3s steps(133, end);
   font-size: xx-large;
 }
 @keyframes type{ 
@@ -557,6 +552,103 @@ li a:hover{
 }
 
 
+/* COLLECTION PAGE */
+
+.title-collection{
+  align-items: center;
+}
+
+
+.witchBlade{
+  transform: rotate(135deg);
+  /* background-color: #141211; */
+  margin: -5px;
+}
+
+
+
+/* CHAT PAGE */
+
+.chat{
+  display: flex;
+  flex-direction: column;
+  flex: 0.75;
+}
+
+.goTm-chat-header{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  margin: 10px;
+}
+
+.chat-search{
+  background-color: rgb(255, 255, 255, 0.1);
+  color:#141211;
+  border: none;
+  text-decoration: none;
+  font-family: 'Alien League Expanded', sans-serif;
+}
+
+.goTm-chat-body{
+  flex: 1;
+}
+
+.message{
+  display: flex;
+  align-items: center;
+  padding: 20px;
+  color: #ebebe0;
+}
+
+.mes_info {
+  margin-left: 20px;
+}
+
+.timestamp {
+  color: #8f805f;
+  margin-left: 20px;
+  font-size: x-small;
+}
+
+.p-chat{
+  font-family: 'Alien League Expanded', sans-serif;
+  font-size: medium;
+}
+
+.goTm-chat-text{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  border-radius: 5px;
+  margin: 20px;
+  border-top: 1px solid gray;
+  background-color: rgb(255, 255, 255, 0.1);
+}
+
+.goTm-chat-text > form > input {
+  padding: 15px;
+  background: transparent;
+  border: none;
+  width: 100%;
+  outline-width: 0;
+  color: #ebebe0;
+  font-size: large;
+  font-family: 'Alien League Expanded', sans-serif;
+}
+
+.goTm-chat-text > form {
+  flex: 1;
+}
+
+.chatTextButton {
+  display: none;
+}
+
+
+
 
 /* GLITCH EFFECT */
 
@@ -595,7 +687,7 @@ section {
 .layers::after {
   content: attr(data-text);
   position: absolute;
-  width: 110%;
+  width: 115%;
   z-index: -1;
 }
 
@@ -665,7 +757,7 @@ section {
 }
 
 .paths {
-  animation: paths 5s step-end infinite;
+  animation: paths 66.6s step-end infinite;
 }
 
 @keyframes paths {
@@ -923,7 +1015,7 @@ section {
 .movement {
   /* Normally this position would be absolute & on the layers, set to relative here so we can see it on the div */
   position: relative;
-  animation: movement 10s step-end infinite;
+  animation: movement 5s step-end infinite;
 }
 
 @keyframes movement {
@@ -1017,7 +1109,7 @@ section {
 
   60% {
     font-weight: 700;
-    color: #fff;
+    color:red;
     filter: blur(0);
   }
 
@@ -1029,16 +1121,16 @@ section {
 }
 
 .glitch span {
-  animation: paths 5s step-end infinite;
+  animation: paths 10s step-end infinite;
 }
 
 .glitch::before {
-  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+  animation: paths 10s step-end infinite, opacity 10s step-end infinite,
     font 8s step-end infinite, movement 10s step-end infinite;
 }
 
 .glitch::after {
-  animation: paths 5s step-end infinite, opacity 5s step-end infinite,
+  animation: paths 10s step-end infinite, opacity 10s step-end infinite,
     font 7s step-end infinite, movement 8s step-end infinite;
 }
 
@@ -1047,3 +1139,39 @@ section {
   /* padding: 200px 0; */
   text-align: center;
 }
+
+
+/* CURSOR */
+
+
+/* *{
+  cursor: none;
+} */
+
+/* .cursor{
+  width: 10px;
+  height: 10px;
+  border: 2px solid #ebebe0;
+  background-color: #ebebe0;
+  border-radius: 50%;
+  position: fixed;
+  transform: translate(-50%, -50%);
+  transition: all 100ms ease;
+  transition-property: opacity;
+} */
+
+/* .c--hidden{
+  opacity: 0;
+} */
+/* .cursor-curse{
+  width: 10px;
+  height: 10px;
+  color: #ebebe0;
+  /* background-color: #8f805f; 
+} */
+
+/* .cursor-curse-outline{
+  width: 12px;
+  height: 12px;
+  background-color:rgb(255, 255, 255, 0.3);
+} */

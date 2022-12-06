@@ -36,8 +36,8 @@ export default function Landing(props) {
                   
                   {isAuthenticated ? (
                     <>
-                      <Link className="btn-movement">Join the movement&nbsp;</Link>
-                      <Link to='/collection' className="btn-movement">| Add to Collection</Link>
+                      <Link to={'/chat'} className="btn-movement">Join the movement&nbsp;</Link>
+                      {/* <Link to='/collection' className="btn-movement">| Add to Collection</Link> */}
                       {/* <Link to='/profile' className="btn-movement">| playing it</Link> */}
                     </>
                   ) : (
@@ -61,13 +61,13 @@ export default function Landing(props) {
                 </div>
                 <img className="card" alt='' src={AoR}/>
                 <div className="card-body-footer">
-                {isAuthenticated ? (
+                {/* {isAuthenticated ? (
                     <>
                       <Link to='/collection' className="btn-movement">Add to Collection</Link>
                     </>
                   ) : (
                     <></>
-                  )}
+                  )} */}
                 </div>
               </div>
               </div>

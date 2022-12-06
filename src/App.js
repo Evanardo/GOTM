@@ -10,6 +10,8 @@ import GameDetail from './components/GameDetail';
 import Collection from './views/Collection';
 import { Footer } from './views/Footer';
 import { CurtainsRounded } from '@mui/icons-material';
+import Cursor from './components/Cursor';
+import Chat from './views/Chat';
 
 
 
@@ -17,7 +19,7 @@ import { CurtainsRounded } from '@mui/icons-material';
 export default function App() {
 
   return (
-
+    
     <Router>
 
       <NavBar />
@@ -28,10 +30,11 @@ export default function App() {
         <Route path='/contact' element={<Contact />} />
         <Route path='/about' element={<About />} />        
         <Route path='/games/:id' element={<GameDetail />} />
-        <Route path='/collection' element={<Collection/>} />        
+        <Route path='/collection' element={<Collection/>} />
+        <Route path='/chat' element={<Chat/>} />        
         
       </Routes>
-
+      
 
       {/* <Footer/> */}
 

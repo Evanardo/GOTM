@@ -1,10 +1,11 @@
-import React from 'react'
+import React from 'react';
+import { GiCrucifix, } from "react-icons/gi";
 
 export default function Contact() {
 
   return (
     <section>
-      <h1>Contact</h1>
+      <h1 className='title-contact'>Con<GiCrucifix className='crucifix' size={39}/>act</h1>
       <div className='checklist'>
         <div className='card' id='contact'>
           <h3>Phone: 0118 999 881 999 119 725 3</h3>

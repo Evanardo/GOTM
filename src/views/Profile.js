@@ -50,6 +50,7 @@ export default function Profile() {
               {isAuthenticated ? (
                     <>
                       <p className="card-bio" typeof='text'>What's there to say... I live to serve the backlog...</p>
+                      {/* <input type="text" value={this.state.value} onChange={this.handleChange}/> */}
                     </>
                   ) : (
                     <> 

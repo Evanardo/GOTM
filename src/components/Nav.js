@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogOutButton';
 import { FaCross } from "react-icons/fa";
+import Cursor from './Cursor';
 
 
 

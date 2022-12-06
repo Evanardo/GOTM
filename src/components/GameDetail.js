@@ -23,10 +23,10 @@ import { GiSunPriest } from "react-icons/gi";
 
 const GameDetail = (props) => {
     const { isAuthenticated } = useAuth0();
-    const location = useLocation()
-    const { game } = location.state
+    const location = useLocation();
+    const { game } = location.state;
     const navigate = useNavigate();
-    console.log(game)
+    // console.log(game)
 
     const starRating = () => {
         const star = [];
