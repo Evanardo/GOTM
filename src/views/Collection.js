@@ -24,6 +24,7 @@ function Collection(props){
         ) : (
           <h2 className='card-title'>You are not one of us...</h2>
         )}
+        
         <p onClick={toProfile} className="btn">To Profile</p>
 
 

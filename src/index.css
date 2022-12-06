@@ -179,9 +179,23 @@ img{
 
 .crucifix{
   transform: rotate(-40deg);
-  /* background-color: #141211; */
+  /* background-color: rgb(255, 255, 255, 0.1); */
   margin: -5px;
-  /* color:#c6b280; */
+  /* margin-top: 15px; */
+  /* color:rgb(255, 255, 255, 0.1); */
+  /* -webkit-animation: fadeout 6s linear forwards; */
+  animation: fadeout 6s linear forwards;
+  opacity: 0;
+}
+
+/* @-webkit-keyframes fadeout {
+  0%, 100% { opacity: 1;}
+  50% { opacity: 1;}
+} */
+
+@keyframes fadeout {
+  0% { opacity: 1; }
+  100% { opacity: 0; }
 }
 
 h3{
@@ -587,6 +601,8 @@ li a:hover{
   background-color: rgb(255, 255, 255, 0.1);
   color:#141211;
   border: none;
+  outline-width: 0;
+
   text-decoration: none;
   font-family: 'Alien League Expanded', sans-serif;
 }
