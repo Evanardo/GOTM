@@ -1,6 +1,6 @@
 import { useAuth0 } from '@auth0/auth0-react';
 import { useNavigate } from 'react-router-dom';
-import React, { Component } from 'react';
+import React from 'react';
 import {Link} from 'react-router-dom';
 import { GiCrucifix,GiSwitchblade, } from "react-icons/gi";
 

@@ -1,7 +1,9 @@
 import React from 'react';
 import Message from '../components/Message';
 
+
 function Chat() {
+    
   return (
       <div >
           <section className='chat'>
@@ -9,16 +11,14 @@ function Chat() {
               <div className='chat'>
                   <div className='goTm-chat-header'>
 
-                      <h2>Eastward Devotional</h2>
+                      <h2>GOTM Devotional</h2>
                       <form>
                         <input className='chat-search' placeholder='What is it you seek?' />    
                       </form>
                   </div>
                   
                   <div className='goTm-chat-body'>
-                    <Message
-
-                    />
+                    <Message/>
                   </div>
 
                   <div className='goTm-chat-text'>
@@ -33,4 +33,4 @@ function Chat() {
   )
 }
 
-export default Chat
+export default Chat;

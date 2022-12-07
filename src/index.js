@@ -14,17 +14,12 @@ import Cursor from './components/Cursor';
 const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
-    
-    <Auth0Provider
-        domain="dev-cujfgun0xuw1xykq.us.auth0.com"
-        clientId="x7Bi2OuqBnACpb1oV1twP4YpH5oTCt0y"
-        redirectUri={window.location.origin}
-    >
-        {/* <Cursor/> */}
-            <App />
-        
-    </Auth0Provider>
-    
+
+  <Auth0Provider
+    domain="dev-cujfgun0xuw1xykq.us.auth0.com"
+    clientId="x7Bi2OuqBnACpb1oV1twP4YpH5oTCt0y"
+    redirectUri={window.location.origin}
+  >
+    <App />
+  </Auth0Provider>
 );
-
-

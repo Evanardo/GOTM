@@ -4,16 +4,17 @@ import { Link } from 'react-router-dom';
 import LoginButton from './LoginButton';
 import LogoutButton from './LogOutButton';
 import { FaCross } from "react-icons/fa";
-import Cursor from './Cursor';
+// import { useSelector } from 'react-redux';
+// import { selectUser } from './features/userSlice';
 
 
 
 function NavBar() {
-
+  // const user = useSelector(selectUser);
   const { isAuthenticated } = useAuth0();
 
 
-  // render() {
+
   return (
     <div id="mySidenav" className="sidenav">
       <Link to="/"><h6 type="image" className='icon'>GO<FaCross className="hero glitch layers" id='goTm-icon'/>M</h6></Link>
@@ -23,7 +24,6 @@ function NavBar() {
         ) : (
           <>            
              <Link to="/profile">Profile</Link>
-             {/* <Link to="/collection">Collection</Link>           */}
           </>
         )}
       <Link to="/about">About Us</Link>
