@@ -566,6 +566,10 @@ li a:hover{
 }
 
 
+
+
+
+
 /* COLLECTION PAGE */
 
 .title-collection{
@@ -581,12 +585,15 @@ li a:hover{
 
 
 
+
 /* CHAT PAGE */
+
 
 .chat{
   display: flex;
   flex-direction: column;
-  flex: 0.75;
+  height: 100vh;
+  width: 100%;
 }
 
 .goTm-chat-header{

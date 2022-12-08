@@ -3,7 +3,7 @@ import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
 import { Auth0Provider } from "@auth0/auth0-react";
-import Cursor from './components/Cursor';
+// import Cursor from './components/Cursor';
 // import { Provider } from 'react-redux';
 // import { store } from './chronic/Store';
 

@@ -9,7 +9,7 @@ function Message() {
             <h6>last.elixir.games
                 <span className='timestamp'>timestamp</span>
             </h6>
-            <p className='p-chat'>message</p>
+            <p className='p-chat'>This feature coming soon...</p>
         </div>
         
     </div>

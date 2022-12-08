@@ -1,13 +1,15 @@
 import React from 'react';
 import Eastward from '../static/images/Eastward.avif';
 import AoR from '../static/images/art_of_rally.avif';
-import AlanWake from '../static/images/AlanWake.jpeg';
+// import AlanWake from '../static/images/AlanWake.jpeg';
 import { Link } from 'react-router-dom';
 import { useAuth0 } from '@auth0/auth0-react';
 
 
 export default function Landing(props) {
   const { isAuthenticated } = useAuth0();
+
+
   
     return (
       <div className='landing-body'>
@@ -35,7 +37,7 @@ export default function Landing(props) {
                   
                   {isAuthenticated ? (
                     <>
-                      <Link to={'/chat'} className="btn-movement">Join the Devotion&nbsp;</Link>
+                      <Link to={'/chat'} className="btn-movement">Join the Devotion</Link>
                       {/* <Link to='/collection' className="btn-movement">| Add to Collection</Link> */}
                       {/* <Link to='/profile' className="btn-movement">| playing it</Link> */}
                     </>

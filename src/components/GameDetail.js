@@ -5,7 +5,6 @@ import { useAuth0 } from "@auth0/auth0-react";
 import { FaCross } from "react-icons/fa";
 import { TbCross } from "react-icons/tb";
 import { 
-    SiNintendoswitch,
     SiPlaystation,
     SiPlaystation2,
     SiPlaystation3,
@@ -14,11 +13,14 @@ import {
     SiPlaystationvita,
     SiSteam,
     SiXbox,
+    SiNintendoswitch,
+    SiWii,
+    SiWiiu,
     SiNintendo3Ds,
     SiNintendogamecube,
     SiSega,
 } from "react-icons/si";
-import { GiSunPriest } from "react-icons/gi";
+// import { GiSunPriest } from "react-icons/gi";
 
 
 const GameDetail = (props) => {
@@ -26,7 +28,7 @@ const GameDetail = (props) => {
     const location = useLocation();
     const { game } = location.state;
     const navigate = useNavigate();
-    // console.log(game)
+    console.log(game)
 
     const starRating = () => {
         const star = [];
@@ -46,8 +48,14 @@ const GameDetail = (props) => {
         switch (platform) {
             case 'Nintendo 3DS':
                 return <SiNintendo3Ds/>;
+            case 'Sega' && 'Genesis' && 'Megadrive' && 'Game Gear':
+                return <SiSega/>
             case 'GameCube':
                 return <SiNintendogamecube/>;
+            case 'Wii':
+                return <SiWii/>;
+            case 'Wii':
+                return <SiWiiu/>
             case 'Nintendo Switch':
                 return <SiNintendoswitch/>;
             case 'PC':

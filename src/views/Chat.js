@@ -2,10 +2,11 @@ import React from 'react';
 import Message from '../components/Message';
 
 
+
 function Chat() {
     
   return (
-      <div >
+      <div>
           <section className='chat'>
               <h1>GOTM CHAT</h1>
               <div className='chat'>
